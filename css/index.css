@@ -1,0 +1,87 @@
+@media only screen and (min-width: 320px) {
+    aside {
+        width: 100%;
+        height: 8.75rem;
+        background-color: hsl(134, 70%, 33%);
+        color: white;
+        /* uc 浏览器*/
+        display: -webkit-box;
+        display: flex;
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    #avatar {
+        border-radius: 50%;
+        width: 5.625rem;
+        height: 5.625rem;
+        background-color: #fff;
+        overflow: hidden;
+        box-shadow: 2px 0 2px hsl(134, 70%, 25%),-2px 0 2px hsl(134, 70%, 25%),0 2px 2px hsl(134, 70%, 25%),0 -2px 2px hsl(134, 70%, 25%);
+    }
+    #avatar > img {
+        width: 5.625rem;
+        height: 5.625rem;
+    }
+    #basic-skill-1 {
+        display: none;
+    }
+    /*#basic-skill > p {*/
+        /*margin: 0;*/
+        /*font-size: .75rem;*/
+    /*}*/
+    #contact > p {
+        font-size: .875rem;
+    }
+    main {
+        margin-top: 2rem;
+    }
+    .time {
+        color: darkgrey;
+        font-size: .75rem;
+        text-indent: 1rem;
+    }
+    .project-info {
+        color: gray;
+        font-weight: bold;
+        display: inline-block;
+        margin-left: 1rem;
+    }
+    .content-info {
+        font-size: .875rem;
+    }
+    .content-info > p {
+        margin: .25rem;
+    }
+    .project-text {
+        text-indent: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #basic-skill-1 {
+        display: block;
+    }
+    #basic-skill-2 {
+        display: block;
+    }
+    aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        width: 15.625rem;
+        flex-flow: row wrap;
+        z-index: 1;
+        background-color: transparent;
+        background-image: url("../assets/images/pebbles.jpg");
+    }
+    main {
+        margin-left: 16.25rem;
+    }
+
+}
