@@ -1,3 +1,6 @@
+.ui.empty.circular.label, .ui.empty.circular.labels .label {
+    vertical-align: text-bottom;
+}
 @media only screen and (min-width: 320px) {
     aside {
         width: 100%;
@@ -59,9 +62,18 @@
     .project-text {
         text-indent: 1rem;
     }
+    .project-link {
+        padding-left: 1rem;
+    }
+    .project-link a,a:visited {
+        color: dimgrey;
+    }
 }
 
 @media only screen and (min-width: 768px) {
+    #avatar {
+        box-shadow: none;
+    }
     #basic-skill-1 {
         display: block;
     }
