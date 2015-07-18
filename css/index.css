@@ -1,6 +1,10 @@
 .ui.empty.circular.label, .ui.empty.circular.labels .label {
     vertical-align: text-bottom;
 }
+
+#contact a,a:visited {
+    color: white;
+}
 @media only screen and (min-width: 320px) {
     aside {
         width: 100%;
@@ -16,6 +20,7 @@
         justify-content: space-around;
         -webkit-align-items: center;
         align-items: center;
+        box-shadow: 2px 0 2px 2px hsl(134, 70%, 33%);
     }
     #avatar {
         border-radius: 50%;
@@ -29,13 +34,6 @@
         width: 5.625rem;
         height: 5.625rem;
     }
-    #basic-skill-1 {
-        display: none;
-    }
-    /*#basic-skill > p {*/
-        /*margin: 0;*/
-        /*font-size: .75rem;*/
-    /*}*/
     #contact > p {
         font-size: .875rem;
     }
@@ -66,19 +64,16 @@
         padding-left: 1rem;
     }
     .project-link a,a:visited {
-        color: dimgrey;
+        color: hsla(0, 0%, 0%, 0.9);
+        font-size: .75rem;
     }
 }
 
 @media only screen and (min-width: 768px) {
     #avatar {
-        box-shadow: none;
-    }
-    #basic-skill-1 {
-        display: block;
-    }
-    #basic-skill-2 {
-        display: block;
+        background-color: hsl(134, 88%, 28%);
+        margin-top: 2rem;
+        box-shadow: 0 2px 2px 2px hsl(134, 70%, 33%);
     }
     aside {
         position: fixed;
@@ -89,11 +84,14 @@
         width: 15.625rem;
         flex-flow: row wrap;
         z-index: 1;
-        background-color: transparent;
-        background-image: url("../assets/images/pebbles.jpg");
+        -webkit-align-content: space-between;
+        align-content: space-between;
     }
     main {
         margin-left: 16.25rem;
+    }
+    address {
+        margin-bottom: 2rem;
     }
 
 }
