@@ -71,6 +71,9 @@
 }
 
 @media only screen and (min-width: 768px) {
+    #avatar {
+        box-shadow: none;
+    }
     #basic-skill-1 {
         display: block;
     }
