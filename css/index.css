@@ -59,6 +59,12 @@
     .project-text {
         text-indent: 1rem;
     }
+    .project-link {
+        padding-left: 1rem;
+    }
+    .project-link a,a:visited {
+        color: dimgrey;
+    }
 }
 
 @media only screen and (min-width: 768px) {
